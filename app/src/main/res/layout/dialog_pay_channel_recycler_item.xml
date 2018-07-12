@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@drawable/common_selector"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/iv_channel_select_item_logo"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/pay_channel_ali" />
+
+    <TextView
+        android:id="@+id/tv_channel_select_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/iv_channel_select_item_logo"
+        android:text="支付宝"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/cb_channel_select_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:button="@drawable/common_check_selector"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F2F2F2" />
+
+</RelativeLayout>
